@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TaskListActivity">
+    <item
+        android:id="@+id/add_task"
+        android:icon="@drawable/plus2"
+        android:title="action_favorite"
+        app:showAsAction="ifRoom"/>
+
+</menu>
