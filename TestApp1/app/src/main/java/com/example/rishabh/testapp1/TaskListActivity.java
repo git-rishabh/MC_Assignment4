@@ -1,7 +1,10 @@
+// The files source is taken and referred from the Code posted by Pushpendra Sir on backpack.
 package com.example.rishabh.testapp1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,7 +18,13 @@ public class TaskListActivity extends SingleFragmentActivity {
        // setContentView(R.layout.activity_addtask);
 
     }
+    public void onResume() {
+        super.onResume();
 
+       // Fragment f=createFragment();
+        //Log.d(TAG,"Resumeddd");
+
+    }
     @Override
     protected Fragment createFragment() {
         return new TaskListFragment();

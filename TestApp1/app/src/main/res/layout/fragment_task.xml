@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+
+    xmlns:tools="http://schemas.android.co
+m/tools"
+    android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
@@ -27,15 +30,15 @@
         android:layout_marginTop="40sp"
         style="?android:listSeparatorTextViewStyle"/>
 
-    <TextView
+
+
+    <Button
+
+        style="@style/BeatBoxButton"
         android:id="@+id/task_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15sp"
-        android:layout_marginRight="25dp"
-        android:gravity="center"
-        android:hint="des"/>
+        android:text="Sound name"/>
 
 
 

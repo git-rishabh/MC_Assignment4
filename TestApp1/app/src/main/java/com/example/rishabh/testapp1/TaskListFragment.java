@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class TaskListFragment extends Fragment {
-
+public static final String TAG="TaskListFragment";
     private RecyclerView mTaskRecyclerView;
     private TaskAdapter mAdapter;
 
@@ -34,8 +35,10 @@ public class TaskListFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        Log.d(TAG,"Resumeddd");
         updateUI();
     }
+
 
     private void updateUI() {
        // TaskLab taskLab = TaskLab.get(getActivity());
@@ -87,8 +90,8 @@ public class TaskListFragment extends Fragment {
 
         private List<Task> mTasks;
 
-        public TaskAdapter(List<Task> crimes) {
-            mTasks = crimes;
+        public TaskAdapter(List<Task> tasks) {
+            mTasks = tasks;
         }
 
         @Override
